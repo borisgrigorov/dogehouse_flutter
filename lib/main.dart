@@ -1,5 +1,6 @@
 import 'package:dogehouse_flutter/provider/doge_provider.dart';
 import 'package:dogehouse_flutter/screens/home/home_screen.dart';
+import 'package:dogehouse_flutter/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -24,7 +25,7 @@ class _DogeHouseAppState extends State<DogeHouseApp> {
 
   @override
   void initState() {
-    dogeProvider.connectWS();
+    //dogeProvider.connectWS();
     super.initState();
   }
 
@@ -39,7 +40,7 @@ class _DogeHouseAppState extends State<DogeHouseApp> {
           backgroundColor: Color(0xFF151a21),
           scaffoldBackgroundColor: Color(0xFF0c0e11),
         ),
-        home: HomeScreen(),
+        home: LoginScreen(),
       ),
     );
   }
